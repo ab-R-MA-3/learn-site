@@ -1,8 +1,8 @@
 <template>
   <div class="container">
       <TopSlide />
-      <TopProduct />
       <TopProfile />
+      <TopProduct />
       <TopBlog />
       <TopFooter />
   </div>

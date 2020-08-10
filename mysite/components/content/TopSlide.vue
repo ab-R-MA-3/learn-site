@@ -5,7 +5,7 @@
         <h1>RedStar Systems</h1>
       </div>
       <div id="top-nav">
-        <div id="top-nav-li"><a href="#top-profile"><h2>Profile</h2></a></div>
+        <div id="top-nav-li"><a href="#top-profile-header"><h2>Profile</h2></a></div>
         <div id="top-nav-li"><a href="#top-product"><h2>Product</h2></a></div>
         <div id="top-nav-li"><a href="#top-blog"><h2>blog</h2></a></div>
       </div>
@@ -21,12 +21,15 @@
   /*背景*/
   background-image: url('~static/images/slide05.jpg');
   background-size: cover;
+  max-width: 100%;
+  height: 100vh;
 }
 
 .top-header {
   display: flex;
   justify-content: space-between;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .5);
 }
 
 .top-slide {
@@ -44,8 +47,8 @@
 
     color: #f1f1f1;
     font-size: 1cm;
-    animation-name: ph;
-    animation-duration: 5000ms;
+    animation-name: phrase;
+    animation-duration: 3000ms;
   }
 
 #top-logo h1{
@@ -71,27 +74,31 @@
   margin-bottom: 0px;
 }
 
-@keyframes appear {
-  /*
+@keyframes phrase {
+  
   0% {
-    transform: translate(-100%, -10%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
   }
 
   25% {
-    transform: translate(-90%, -20%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
   }
 
+  /*
   50% {
-    transform: translate(-80%, -30%);
+    opacity: 0.5;
   }
 
   75% {
-    transform: translate(-70%, -40%);
-  }
-
-  100% {
-    transform: translate(-50%, -50%);
+    opacity: 0.75;
   }
   */
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  
 }
 </style>
