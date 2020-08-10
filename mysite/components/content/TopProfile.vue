@@ -20,7 +20,13 @@
         <br>
         <p>【言語】</p>
         <p>
-            Java/PHP/Pyhon/Go
+            Java
+            <br>
+            PHP
+            <br>
+            Python
+            <br>
+            go
         </p>
       </div>
     </div>
